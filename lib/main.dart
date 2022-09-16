@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:starting_mobx/dice/dice_widget.dart';
+import 'package:starting_mobx/form/form_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const DicePage(),
+      home: const FormPage(),
     );
   }
 }
