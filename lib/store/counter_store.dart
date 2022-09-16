@@ -26,6 +26,30 @@ abstract class _CounterStoreBase with Store {
   void increment() {
     value++;
   }
+
+  @action
+  newName(String newName) {
+    firstName = newName;
+    lastName = lastName;
+  }
+
+  @action
+  firstNamep() {}
+
+  @action
+  void lastNamep() {}
+
+  @observable
+  String firstName = '';
+
+  @observable
+  late String lastName = '';
+
+  @computed
+  String get fullName => '$firstName, $lastName';
+
+  @action
+  void getFullname() {}
 }
 
 //flutter pub run build_runner build para gerar o arquivo .g
